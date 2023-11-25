@@ -1,5 +1,6 @@
 import 'package:credit_card_checkout_app/Core/utils/assets.dart';
 import 'package:credit_card_checkout_app/Core/utils/generate_random_small_carts.dart';
+import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/calculating_price_section.dart';
 import 'package:flutter/material.dart';
 
 class MyCartViewBody extends StatelessWidget {
@@ -29,6 +30,11 @@ class MyCartViewBody extends StatelessWidget {
                   ],
                 ),
               ),
+              const SizedBox(
+                height: 25,
+              ),
+              const CalculatingPriceSection(),
+              
             ],
           ),
         ),
