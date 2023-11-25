@@ -1,4 +1,3 @@
-import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class MyCartViewBody extends StatelessWidget {
@@ -7,8 +6,16 @@ class MyCartViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        CustomAppBar(),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            children: [
+              Text("Hello"),
+            ],
+          ),
+        ),
       ],
     );
   }

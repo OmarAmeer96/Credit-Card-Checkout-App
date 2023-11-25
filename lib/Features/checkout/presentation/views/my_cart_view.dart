@@ -1,3 +1,5 @@
+import 'package:credit_card_checkout_app/Core/utils/styles.dart';
+import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/custom_ap_bar_leading.dart';
 import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/my_cart_view_body.dart';
 import 'package:flutter/material.dart';
 
@@ -9,10 +11,24 @@ class MyCartView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
-        body: MyCartViewBody(),
+        appBar: AppBar(
+          toolbarHeight: 65,
+          centerTitle: true,
+          backgroundColor: Colors.transparent,
+          shadowColor: Colors.transparent,
+          title: Text(
+            "My Cart",
+            textAlign: TextAlign.center,
+            style: Styles.inter500.copyWith(
+              fontSize: 25,
+            ),
+          ),
+          leading: const CusomAppBarLeading(),
+        ),
+        body: const MyCartViewBody(),
       ),
     );
   }
