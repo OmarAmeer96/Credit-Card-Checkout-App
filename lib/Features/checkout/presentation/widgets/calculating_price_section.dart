@@ -1,4 +1,5 @@
 import 'package:credit_card_checkout_app/Core/utils/styles.dart';
+import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/custom_main_button.dart';
 import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/order_and_price_row.dart';
 import 'package:flutter/material.dart';
 
@@ -55,6 +56,13 @@ class CalculatingPriceSection extends StatelessWidget {
               style: Styles.inter600,
             ),
           ],
+        ),
+        const SizedBox(
+          height: 16,
+        ),
+        CustomMainButton(
+          text: "Complete Payment",
+          onPressed: () {},
         ),
       ],
     );

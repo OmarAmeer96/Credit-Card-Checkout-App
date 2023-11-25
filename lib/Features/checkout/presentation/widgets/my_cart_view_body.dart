@@ -34,7 +34,6 @@ class MyCartViewBody extends StatelessWidget {
                 height: 25,
               ),
               const CalculatingPriceSection(),
-              
             ],
           ),
         ),
