@@ -1,3 +1,4 @@
+import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class MyCartViewBody extends StatelessWidget {
@@ -6,7 +7,12 @@ class MyCartViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
-      children: [],
+      children: [
+        SizedBox(
+          height: 40,
+        ),
+        CustomAppBar(),
+      ],
     );
   }
 }

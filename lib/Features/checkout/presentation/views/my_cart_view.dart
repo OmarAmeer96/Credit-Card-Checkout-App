@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 class MyCartView extends StatelessWidget {
   const MyCartView({super.key});
 
+  // THERE ARE SOMETHINGS I USED IN THE <"UTILS"> FOLDER IN THE <<"CORE">> FLDER.
+  // (IF U WANT TO RE-USE THIS CODE, DON'T FOGOT THEM).
+
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
