@@ -1,7 +1,24 @@
+import 'package:credit_card_checkout_app/constants.dart';
+import 'package:flutter/material.dart';
+
 abstract class Styles {
-  // static const almaraiLight = TextStyle(
-  //   fontSize: 18,
-  //   fontFamily: kAlmaraiLight,
-  //   fontWeight: FontWeight.w700,
-  // );
+  static const inter400 = TextStyle(
+    fontSize: 18,
+    fontFamily: kInterRegular,
+  );
+  static const inter500 = TextStyle(
+    fontSize: 22,
+    fontFamily: kInterMedium,
+    fontWeight: FontWeight.w700,
+  );
+  static const inter600 = TextStyle(
+    fontSize: 24,
+    fontFamily: kInterSemiBold,
+    fontWeight: FontWeight.w700,
+  );
+  static const inter700 = TextStyle(
+    fontSize: 26,
+    fontFamily: kInterBold,
+    fontWeight: FontWeight.w700,
+  );
 }
