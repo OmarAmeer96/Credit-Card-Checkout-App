@@ -1,5 +1,6 @@
 // ------------------------------ Omar Ameer  ---------------------------------
 
+import 'package:credit_card_checkout_app/constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomMainButton extends StatelessWidget {
@@ -18,7 +19,7 @@ class CustomMainButton extends StatelessWidget {
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         padding: EdgeInsets.zero,
-        backgroundColor: const Color(0xff8D070F),
+        backgroundColor: kPrimaryColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(19),
         ),

@@ -8,32 +8,40 @@ class MyCartViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+    return CustomScrollView(
+      physics: const NeverScrollableScrollPhysics(),
+      slivers: <Widget>[
+        SliverFillRemaining(
+          hasScrollBody: false,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const SizedBox(
-                height: 25,
-              ),
-              Center(
-                child: Stack(
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Column(
                   children: [
-                    SizedBox(
-                      height: 450,
-                      child: Image.asset(AssetsData.cartImage),
+                    const SizedBox(
+                      height: 25,
                     ),
-                    ...generateRandomSmallCarts(
-                        10), // adjust this value to change the number of small cart images
+                    Center(
+                      child: Stack(
+                        children: [
+                          SizedBox(
+                            height: 450,
+                            child: Image.asset(AssetsData.cartImage),
+                          ),
+                          ...generateRandomSmallCarts(
+                              10), // adjust this value to change the number of small cart images
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
-              const SizedBox(
-                height: 25,
+              const Padding(
+                padding: EdgeInsets.only(left: 20, right: 20, bottom: 15),
+                child: CalculatingPriceSection(),
               ),
-              const CalculatingPriceSection(),
             ],
           ),
         ),
