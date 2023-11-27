@@ -1,4 +1,5 @@
 import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/custom_main_button.dart';
+import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/payment_methods_section.dart';
 import 'package:flutter/material.dart';
 
 class PaymentDetailsViewBody extends StatelessWidget {
@@ -19,12 +20,11 @@ class PaymentDetailsViewBody extends StatelessWidget {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: 25,
+                      height: 8,
                     ),
-                    Center(
-                      child: Center(
-                        child: Text("Hello"),
-                      ),
+                    PaymentMethodsSection(),
+                    SizedBox(
+                      height: 50,
                     ),
                   ],
                 ),
