@@ -26,7 +26,9 @@ class MyCartView extends StatelessWidget {
               fontSize: 25,
             ),
           ),
-          leading: const CusomAppBarLeading(),
+          leading: CusomAppBarLeading(
+            onTap: () {},
+          ),
         ),
         body: const MyCartViewBody(),
       ),

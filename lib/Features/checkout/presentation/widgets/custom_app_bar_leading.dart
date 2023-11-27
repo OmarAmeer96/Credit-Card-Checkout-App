@@ -5,7 +5,10 @@ import 'package:flutter_svg/svg.dart';
 class CusomAppBarLeading extends StatelessWidget {
   const CusomAppBarLeading({
     super.key,
+    required this.onTap,
   });
+
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +17,7 @@ class CusomAppBarLeading extends StatelessWidget {
         const Spacer(),
         Center(
           child: InkWell(
-            onTap: () {},
+            onTap: onTap,
             borderRadius: BorderRadius.circular(24),
             child: Padding(
               padding: const EdgeInsets.all(8.0),
