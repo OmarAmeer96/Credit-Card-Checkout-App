@@ -1,5 +1,6 @@
 // ------------------------------ Omar Ameer  ---------------------------------
 
+import 'package:credit_card_checkout_app/Core/utils/styles.dart';
 import 'package:credit_card_checkout_app/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -30,11 +31,8 @@ class CustomMainButton extends StatelessWidget {
         alignment: Alignment.center,
         child: Text(
           text,
-          style: const TextStyle(
-            color: Colors.white,
-            fontSize: 19,
-            fontFamily: "Gilroy-Reular",
-            fontWeight: FontWeight.w500,
+          style: Styles.inter600.copyWith(
+            fontSize: 21,
           ),
         ),
       ),
