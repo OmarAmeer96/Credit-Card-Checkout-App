@@ -1,7 +1,7 @@
 import 'package:credit_card_checkout_app/Core/utils/app_router.dart';
-import 'package:credit_card_checkout_app/Core/utils/styles.dart';
 import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/custom_main_button.dart';
 import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/order_and_price_row.dart';
+import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/total_price_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -44,21 +44,7 @@ class CalculatingPriceSection extends StatelessWidget {
         const SizedBox(
           height: 15,
         ),
-        const Row(
-          children: [
-            Text(
-              "Total",
-              textAlign: TextAlign.start,
-              style: Styles.inter600,
-            ),
-            Spacer(),
-            Text(
-              "\$50.97",
-              textAlign: TextAlign.start,
-              style: Styles.inter600,
-            ),
-          ],
-        ),
+        const TotalPrice(),
         const SizedBox(
           height: 16,
         ),
