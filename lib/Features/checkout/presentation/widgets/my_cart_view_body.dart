@@ -31,7 +31,7 @@ class MyCartViewBody extends StatelessWidget {
                             child: Image.asset(AssetsData.cartImage),
                           ),
                           ...generateRandomSmallCarts(
-                              10), // adjust this value to change the number of small cart images
+                              10),
                         ],
                       ),
                     ),
