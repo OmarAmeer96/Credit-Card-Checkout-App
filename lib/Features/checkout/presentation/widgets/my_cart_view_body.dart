@@ -30,8 +30,7 @@ class MyCartViewBody extends StatelessWidget {
                             height: 450,
                             child: Image.asset(AssetsData.cartImage),
                           ),
-                          ...generateRandomSmallCarts(
-                              10),
+                          ...generateRandomSmallCarts(10),
                         ],
                       ),
                     ),

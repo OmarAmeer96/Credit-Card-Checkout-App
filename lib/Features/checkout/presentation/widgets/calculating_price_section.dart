@@ -1,7 +1,9 @@
+import 'package:credit_card_checkout_app/Core/utils/app_router.dart';
 import 'package:credit_card_checkout_app/Core/utils/styles.dart';
 import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/custom_main_button.dart';
 import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/order_and_price_row.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class CalculatingPriceSection extends StatelessWidget {
   const CalculatingPriceSection({super.key});
@@ -62,7 +64,11 @@ class CalculatingPriceSection extends StatelessWidget {
         ),
         CustomMainButton(
           text: "Complete Payment",
-          onPressed: () {},
+          onPressed: () {
+            GoRouter.of(context).push(
+              AppRouter.kPaymentDetailsView,
+            );
+          },
         ),
       ],
     );
