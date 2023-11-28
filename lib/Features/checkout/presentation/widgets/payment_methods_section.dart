@@ -15,14 +15,17 @@ class PaymentMethodsSection extends StatelessWidget {
         PaymentMethodsItem(
           paymentMethodIcon: AssetsData.paymentMethod1,
           paddingValue: 16.5,
+          isActive: false,
         ),
         PaymentMethodsItem(
           paymentMethodIcon: AssetsData.paymentMethod2,
           paddingValue: 23.5,
+          isActive: false,
         ),
         PaymentMethodsItem(
           paymentMethodIcon: AssetsData.paymentMethod3,
           paddingValue: 20.5,
+          isActive: false,
         ),
       ],
     );

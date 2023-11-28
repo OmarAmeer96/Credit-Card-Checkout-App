@@ -6,28 +6,49 @@ class PaymentMethodsItem extends StatelessWidget {
     super.key,
     required this.paymentMethodIcon,
     required this.paddingValue,
+    this.isActive = false,
   });
 
   final String paymentMethodIcon;
   final double paddingValue;
+  final bool isActive;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 500),
       width: 110,
       height: 70,
       decoration: ShapeDecoration(
         shape: RoundedRectangleBorder(
           side: BorderSide(
-            width: 1,
-            color: Colors.black.withOpacity(0.5),
+            width: 1.50,
+            color: isActive ? const Color(0xFF34A853) : const Color(0xff7f7f7f),
           ),
           borderRadius: BorderRadius.circular(15),
         ),
+        shadows: [
+          BoxShadow(
+            color: isActive ? const Color(0xFF34A853) : Colors.transparent,
+            blurRadius: 4,
+            offset: const Offset(0, 0),
+            spreadRadius: 0,
+          )
+        ],
       ),
-      child: Padding(
-        padding: EdgeInsets.symmetric(vertical: paddingValue),
-        child: SvgPicture.asset(paymentMethodIcon),
+      child: Container(
+        width: 110,
+        height: 70,
+        decoration: ShapeDecoration(
+          color: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15),
+          ),
+        ),
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: paddingValue),
+          child: SvgPicture.asset(paymentMethodIcon),
+        ),
       ),
     );
   }
