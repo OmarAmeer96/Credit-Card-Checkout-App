@@ -1,5 +1,5 @@
 import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/custom_main_button.dart';
-import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/payment_methods_section.dart';
+import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/payment_methods_list_view.dart';
 import 'package:flutter/material.dart';
 
 class PaymentDetailsViewBody extends StatelessWidget {
