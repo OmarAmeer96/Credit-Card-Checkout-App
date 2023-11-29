@@ -8,34 +8,26 @@ class PaymentDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      physics: const NeverScrollableScrollPhysics(),
-      slivers: <Widget>[
-        SliverFillRemaining(
-          hasScrollBody: false,
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                child: Column(
-                  children: [
-                    SizedBox(
-                      height: 8,
-                    ),
-                    PaymentMethodsSection(),
-                    CustomCreditCard(),
-                  ],
-                ),
+              SizedBox(
+                height: 8,
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20, bottom: 15),
-                child: CustomMainButton(
-                  text: "Pay",
-                  onPressed: () {},
-                ),
-              ),
+              PaymentMethodsSection(),
+              CustomCreditCard(),
             ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 20, right: 20, bottom: 15),
+          child: CustomMainButton(
+            text: "Pay",
+            onPressed: () {},
           ),
         ),
       ],
