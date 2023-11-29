@@ -9,4 +9,7 @@ class AssetsData {
   static const paymentMethod1 = 'assets/svg/paymentMethod1.svg';
   static const paymentMethod2 = 'assets/svg/paymentMethod2.svg';
   static const paymentMethod3 = 'assets/svg/paymentMethod3.svg';
+
+  static const correctCheckSvg = 'assets/svg/CorrectCheck.svg';
+  static const correctCheckPng = 'assets/svg/CorrectCheck.png';
 }
