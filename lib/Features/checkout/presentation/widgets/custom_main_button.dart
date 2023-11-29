@@ -1,5 +1,3 @@
-// ------------------------------ Omar Ameer  ---------------------------------
-
 import 'package:credit_card_checkout_app/Core/utils/styles.dart';
 import 'package:credit_card_checkout_app/constants.dart';
 import 'package:flutter/material.dart';
