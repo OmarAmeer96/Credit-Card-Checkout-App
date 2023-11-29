@@ -1,9 +1,11 @@
 import 'dart:developer';
 
+import 'package:credit_card_checkout_app/Core/utils/app_router.dart';
 import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/custom_credit_card.dart';
 import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/custom_main_button.dart';
 import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/payment_methods_list_view.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class PaymentDetailsViewBody extends StatefulWidget {
   const PaymentDetailsViewBody({super.key});
@@ -59,8 +61,9 @@ class _PaymentDetailsViewBodyState extends State<PaymentDetailsViewBody> {
                 text: "Pay",
                 onPressed: () {
                   if (formKey.currentState!.validate()) {
-                    log('Payment Succesful');
                     formKey.currentState!.save();
+                    log('Payment Succesful');
+                    GoRouter.of(context).push(AppRouter.kThankYouView);
                   } else {
                     autovalidateMode = AutovalidateMode.always;
                     setState(() {});
