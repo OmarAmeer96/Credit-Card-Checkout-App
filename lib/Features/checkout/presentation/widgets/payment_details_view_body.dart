@@ -9,35 +9,44 @@ class PaymentDetailsViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
-      physics: const NeverScrollableScrollPhysics(),
       slivers: [
+        const SliverToBoxAdapter(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 8,
+                ),
+                PaymentMethodsListView(),
+                SizedBox(
+                  height: 20,
+                ),
+              ],
+            ),
+          ),
+        ),
+        const SliverToBoxAdapter(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              children: [
+                CustomCreditCard(),
+              ],
+            ),
+          ),
+        ),
         SliverFillRemaining(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                child: Column(
-                  children: [
-                    SizedBox(
-                      height: 8,
-                    ),
-                    PaymentMethodsSection(),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    CustomCreditCard(),
-                  ],
-                ),
+          hasScrollBody: false,
+          child: Padding(
+            padding: const EdgeInsets.only(left: 20, right: 20, bottom: 15),
+            child: Align(
+              alignment: Alignment.bottomCenter,
+              child: CustomMainButton(
+                text: "Pay",
+                onPressed: () {},
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20, bottom: 15),
-                child: CustomMainButton(
-                  text: "Pay",
-                  onPressed: () {},
-                ),
-              ),
-            ],
+            ),
           ),
         ),
       ],

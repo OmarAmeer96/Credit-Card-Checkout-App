@@ -3,16 +3,16 @@ import 'package:credit_card_checkout_app/Core/utils/responsive.dart';
 import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/payment_methods_item.dart';
 import 'package:flutter/material.dart';
 
-class PaymentMethodsSection extends StatefulWidget {
-  const PaymentMethodsSection({
+class PaymentMethodsListView extends StatefulWidget {
+  const PaymentMethodsListView({
     super.key,
   });
 
   @override
-  State<PaymentMethodsSection> createState() => _PaymentMethodsSectionState();
+  State<PaymentMethodsListView> createState() => _PaymentMethodsListViewState();
 }
 
-class _PaymentMethodsSectionState extends State<PaymentMethodsSection> {
+class _PaymentMethodsListViewState extends State<PaymentMethodsListView> {
   final Map<String, double> paymentMethodsIcons = const {
     AssetsData.paymentMethod1: 16.5,
     AssetsData.paymentMethod2: 23.5,
