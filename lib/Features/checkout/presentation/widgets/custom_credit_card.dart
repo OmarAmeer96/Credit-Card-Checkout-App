@@ -24,8 +24,8 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
           cardHolderName: cardHolderName,
           cvvCode: cvvCode,
           showBackView: showBackView,
+          isHolderNameVisible: true,
           onCreditCardWidgetChange: (value) {},
-          bankName: 'CIB',
         ),
         CreditCardForm(
           cardNumber: cardNumber,
