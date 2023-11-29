@@ -1,4 +1,4 @@
-import 'package:credit_card_checkout_app/Core/widgets/build_app_bar.dart';
+import 'package:credit_card_checkout_app/Core/widgets/build_custom_ap_bar.dart';
 import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/my_cart_view_body.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +13,7 @@ class MyCartView extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
-        appBar: buildAppBar(title: 'My Cart'),
+        appBar: buildCustomAppBar(title: 'My Cart'),
         body: const MyCartViewBody(),
       ),
     );
