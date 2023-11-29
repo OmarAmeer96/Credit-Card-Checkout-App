@@ -19,6 +19,9 @@ class PaymentDetailsViewBody extends StatelessWidget {
                 height: 8,
               ),
               PaymentMethodsSection(),
+              SizedBox(
+                height: 20,
+              ),
               CustomCreditCard(),
             ],
           ),
