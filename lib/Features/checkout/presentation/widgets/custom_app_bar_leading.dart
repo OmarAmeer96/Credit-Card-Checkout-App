@@ -1,6 +1,5 @@
-import 'package:credit_card_checkout_app/Core/utils/assets.dart';
+import 'package:credit_card_checkout_app/Features/checkout/presentation/widgets/custom_app_bar_leading_item.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class CusomAppBarLeading extends StatelessWidget {
   const CusomAppBarLeading({
@@ -16,14 +15,7 @@ class CusomAppBarLeading extends StatelessWidget {
       children: [
         const Spacer(),
         Center(
-          child: InkWell(
-            onTap: onTap,
-            borderRadius: BorderRadius.circular(24),
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: SvgPicture.asset(AssetsData.arrowBack),
-            ),
-          ),
+          child: CustomApBarLeadingItem(onTap: onTap),
         ),
       ],
     );
