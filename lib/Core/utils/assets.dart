@@ -12,4 +12,7 @@ class AssetsData {
 
   static const correctCheckSvg = 'assets/svg/CorrectCheck.svg';
   static const correctCheckPng = 'assets/svg/CorrectCheck.png';
+
+  static const dashedLine = 'assets/svg/dashedLine.svg';
+  static const trueCheckVector = 'assets/svg/trueCheckVector.svg';
 }
