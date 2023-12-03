@@ -25,8 +25,8 @@ class ThankYouViewBody extends StatelessWidget {
           ),
         ),
         Stack(
-          clipBehavior: Clip.none,
           alignment: Alignment.center,
+          clipBehavior: Clip.none,
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 10),
@@ -43,14 +43,14 @@ class ThankYouViewBody extends StatelessWidget {
             ),
             Positioned(
               bottom: Responsive.screenHeight(context) * 0.2,
-              left: Responsive.screenWidth(context) * -0.05,
+              left: -20,
               child: const CircleAvatar(
                 backgroundColor: Colors.white,
               ),
             ),
             Positioned(
               bottom: Responsive.screenHeight(context) * 0.2,
-              right: Responsive.screenWidth(context) * -0.05,
+              right: -20,
               child: const CircleAvatar(
                 backgroundColor: Colors.white,
               ),
@@ -62,29 +62,23 @@ class ThankYouViewBody extends StatelessWidget {
                 width: Responsive.screenWidth(context) * 0.765,
               ),
             ),
-            Positioned(
-              top: Responsive.screenHeight(context) * -0.045,
-              child: Container(
-                width: 100,
-                height: 100,
-                decoration: const ShapeDecoration(
-                  color: Color(0xFFD9D9D9),
-                  shape: OvalBorder(),
-                ),
+            const Positioned(
+              top: -40,
+              child: CircleAvatar(
+                backgroundColor: Color(0xFFD9D9D9),
+                radius: 50,
               ),
             ),
             Positioned(
-              top: Responsive.screenHeight(context) * -0.0338,
-              child: Container(
-                padding: const EdgeInsets.all(15),
-                width: 80,
-                height: 80,
-                decoration: const ShapeDecoration(
-                  color: Color(0xFF34A853),
-                  shape: OvalBorder(),
-                ),
+              top: -30,
+              child: CircleAvatar(
+                backgroundColor: const Color(0xFF34A853),
+                radius: 40,
                 child: Center(
-                  child: SvgPicture.asset(AssetsData.trueCheckVector),
+                  child: SvgPicture.asset(
+                    AssetsData.trueCheckVector,
+                    width: 50,
+                  ),
                 ),
               ),
             ),
