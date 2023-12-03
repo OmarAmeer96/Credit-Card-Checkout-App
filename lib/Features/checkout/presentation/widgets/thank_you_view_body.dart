@@ -56,12 +56,39 @@ class ThankYouViewBody extends StatelessWidget {
               ),
             ),
             Positioned(
-              bottom: Responsive.screenHeight(context) * 0.22,
+              bottom: Responsive.screenHeight(context) * 0.2 + 20,
               child: SvgPicture.asset(
                 AssetsData.dashedLine,
                 width: Responsive.screenWidth(context) * 0.765,
               ),
             ),
+            // Another way to create the dashed line:
+            // Positioned(
+            //   left: 0,
+            //   right: 0,
+            //   bottom: Responsive.screenHeight(context) * 0.2,
+            //   child: Padding(
+            //     padding: const EdgeInsets.symmetric(horizontal: 20),
+            //     child: Row(
+            //       children: List.generate(
+            //         25,
+            //         (index) => Expanded(
+            //           child: Padding(
+            //             padding: const EdgeInsets.symmetric(horizontal: 2),
+            //             child: Container(
+            //               height: 2,
+            //               decoration: const ShapeDecoration(
+            //                 color: Color(0xFFB7B7B7),
+            //                 shape: RoundedRectangleBorder(),
+            //               ),
+            //             ),
+            //           ),
+            //         ),
+            //       ),
+            //     ),
+            //   ),
+            // ),
+
             const Positioned(
               top: -40,
               child: CircleAvatar(
