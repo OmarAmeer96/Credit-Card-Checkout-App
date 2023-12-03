@@ -64,23 +64,20 @@ class ThankYouViewBody extends StatelessWidget {
             ),
             // Another way to create the dashed line:
             // Positioned(
-            //   left: 0,
-            //   right: 0,
+            //   left: 20 + 4,
+            //   right: 20 + 4,
             //   bottom: Responsive.screenHeight(context) * 0.2,
-            //   child: Padding(
-            //     padding: const EdgeInsets.symmetric(horizontal: 20),
-            //     child: Row(
-            //       children: List.generate(
-            //         25,
-            //         (index) => Expanded(
-            //           child: Padding(
-            //             padding: const EdgeInsets.symmetric(horizontal: 2),
-            //             child: Container(
-            //               height: 2,
-            //               decoration: const ShapeDecoration(
-            //                 color: Color(0xFFB7B7B7),
-            //                 shape: RoundedRectangleBorder(),
-            //               ),
+            //   child: Row(
+            //     children: List.generate(
+            //       25,
+            //       (index) => Expanded(
+            //         child: Padding(
+            //           padding: const EdgeInsets.symmetric(horizontal: 2),
+            //           child: Container(
+            //             height: 2,
+            //             decoration: const ShapeDecoration(
+            //               color: Color(0xFFB7B7B7),
+            //               shape: RoundedRectangleBorder(),
             //             ),
             //           ),
             //         ),
