@@ -29,6 +29,7 @@ class _PaymentDetailsViewBodyState extends State<PaymentDetailsViewBody> {
               children: [
                 SizedBox(
                   height: 8,
+                  
                 ),
                 PaymentMethodsListView(),
                 SizedBox(
